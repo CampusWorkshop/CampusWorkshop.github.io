@@ -2,10 +2,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Familia Suquia</title>
+  <title>Campus Workshop</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100" rel="stylesheet">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/underconstruction.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
@@ -14,42 +14,9 @@
   <div class="show" id="backgroundImage2"></div>
   <div class="ovarlay"></div>
   <div class="infoText">
-    EN CONSTRUCCION
-    <span>FAMILIA SUQUIA</span>
+    CAMPUS WORKSHOP
+    <span>WELCOME TO OUR WEBSITE</span>
   </div>
 </body>
 
 </html>
-
-<script>
-backgroundCount = 1;
-currentFrame = 1;
-function restartTimer() {
-  timePrompt = setTimeout(function() {
-    changeImage();
-  }, 6000);
-}
-function changeImage() {  
-  imageUrl = "url('img/" + backgroundCount + ".jfif')";
-  if (currentFrame == 1) {
-    currentName = "backgroundImage1";
-    hideName = "backgroundImage2";
-    currentFrame = 2;
-  } else {
-    currentName = "backgroundImage2";
-    hideName = "backgroundImage1";
-    currentFrame = 1;
-  }
-  document.getElementById(currentName).style.backgroundImage = imageUrl;
-  document.getElementById(hideName).className = 'hide';
-  document.getElementById(currentName).className = 'show';
-  restartTimer();
-  if(backgroundCount == 10)
-  {
-	backgroundCount = 0;
-  }
-  
-  backgroundCount++;
-}
-restartTimer();
-</script>
