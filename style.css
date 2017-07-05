@@ -37,14 +37,14 @@ body {
   text-align: center;
   top: 40%;
   background: none;
-  letter-spacing: 40px;
+  letter-spacing: 30px;
   z-index: 6;
   padding: 10px;
 }
 
 .infoText span {
   font-size: 14px;
-  letter-spacing: 30px;
+  letter-spacing: 40px;
   display: block;
 }
 
